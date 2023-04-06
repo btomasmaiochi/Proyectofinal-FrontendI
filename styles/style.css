@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+:root {
+    --white: #F5F5F5;
+    --white-text: #FFFFFF;
+    --black: #000000;
+    --bg-footer: #1E1E26;
+    --gray: #97969b;
+    --gray02: #FAFAFA;
+    --blue-text: #232C50;
+    --blue-title: #3F4868;
+    --nav-color: #242E52;
+    --light-blue: #3CDDF3 ;
+    --purple: #8B48BF;
+}
+
+/* Header content */
+
+header {
+    height: 50px;
+    margin: 44px 39px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav, .best-person1, .best-person3  {
+    display: none;
+}
+
+.header-hamburger {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-btn {
+    display: none;
+}
+
+#hamburger-menu {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tenis-player {
+    margin: 68px 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tenis-player > img {
+    width: 400px;
+    height: 342px;
+}
+
+.tenis-content {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tenis-wrapper {
+    width: 83%;
+    margin: 100px 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.main-text {
+    width: 90%;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--blue-text);
+    align-self: flex-end;
+    margin: 0 0 28px 43px;
+    text-align: end;
+}
+
+.tenis-text {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: end;
+    margin-bottom: 28px;
+}
+
+#contact {
+    padding: 12.5px 41px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--purple);
+    color: var(--white-text);
+    cursor: pointer;
+}
+
+#contact:hover, #best-btn:hover {
+    border: .5px solid var(--purple);
+    background-color: var(--white);
+    color: var(--purple);
+}
+
+.pro-content {
+    background-color: var(--light-blue);
+    color: var(--white-text);
+    padding: 40px;
+}
+
+.pro-question {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.pro-answer {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.company-benefits {
+    margin: 65px 0 20px 34px;
+}
+
+.title {
+    height: 40px;
+    width: 100%;
+    border-radius: 30px 0 0 30px;
+    background-color:rgba(139, 72, 191, 0.3);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.number {
+    background-color: var(--purple);
+    color: var(--white-text);
+    padding: 10px 26px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    margin-right: 18px;
+}
+
+.text-description {
+    color: var(--gray);
+    margin-top: 21px;
+    margin-right: 18px;
+    padding: 10px;
+}
+
+.text-box:nth-child(n + 2) {
+    margin-top: 20px;
+}
+
+.best-month {
+    margin: 81px 17px 58px 17px;
+}
+
+.players-name, .photo-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.best-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 73px;
+}
+
+.photo-name {
+    margin-left: calc(50% - 44px);
+    position: absolute;
+    color: var(--blue-text);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.photo-name > img, .photo-name > p {
+    margin-bottom: 21px;
+}
+
+.best-description {
+    background-color: var(--gray02);
+    padding: 102px 17px 20px 18px;
+    margin-top: 35px;
+}
+
+.best-description > p {
+    padding: 0 20px;
+    text-align: center;
+    color: var(--gray);
+    padding: 21px 27px 20px;
+}
+
+#best-btn {
+    margin-top: 45px;
+    padding: 13.5px 51px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--purple);
+    color: var(--white-text);
+    cursor: pointer;
+}
+
+.best-teams {
+    background-color: var(--light-blue);
+    color: var(--white-text);
+    width: 100%;
+    padding: 40px 80px;
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team-text {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#team-btn {
+    background-color: var(--blue-text);
+    color: var(--white-text);
+    padding: 12.5px 42px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+#team-btn:hover {
+    opacity: 0.7;
+    color: var(--purple);
+}
+
+footer {
+    padding: 50px 50px 40px;
+    background-color: var(--bg-footer);
+}
+
+.footer-input-btn {
+    display: flex;
+    justify-content: center;
+}
+
+form > input {
+    width: 269px;
+    height: 44px;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+#go-input { 
+    width: 63px;
+    height: 42px;
+    background-color: var(--purple);
+    color: var(--white-text);
+    border: none;
+    border-radius: 50px;
+    margin-left: 9px;
+    cursor: pointer
+}
+
+#go-input:hover {
+    background-color: var(--white);
+    color: var(--purple);
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav-menu {
+    width: 324px;
+    margin-top: 38px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-nav-link {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.footer-nav-link > a {
+    text-decoration: none;
+    color: var(--white-text);
+    font-weight: 300;
+}
+
+.footer-icons-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon-container {
+    margin: 35px 0;
+    width: 380px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-container > a {
+    text-decoration: none;
+    color: var(--white-text);
+}
+
+.icon {
+    font-size: 1.3rem;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.copyright {
+    font-size: .8rem;
+    color: var(--gray);
+    margin-top: 35px;
+}
+
+@media screen and (min-width:1024px) {
+    .header-hamburger {
+        display: none;
+    }
+
+    .header-nav {
+        display: inline-block;
+    }
+
+    .ul-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-right: 28px;
+    }
+
+    .nav-link {
+        list-style: none;
+    }
+
+    .nav-link:nth-child(-n + 4) {
+        margin-right: 28px;
+    }
+
+    .nav-link > a {
+        text-decoration: none;
+        color: var(--nav-color);
+        font-size: .8rem;
+        font-weight: 500;
+    }
+
+    .nav-link > a:hover {
+        color: rgba(36, 46, 82, 0.6);
+    }
+
+    .header-btn {
+        display: inline-block;
+    }
+    
+    #contact:first-child {
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    }
+
+    .tenis-content {
+        flex-direction: row;
+        margin: 61px 0 55px 0;
+    }
+
+    .pro-content {
+        background-color: var(--purple);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 15.2%;
+    }
+
+    .pro-question {
+        margin-bottom: 0;
+        margin-right: 100px;
+    }
+
+    .text-box {
+        width: 45%;
+    }
+
+    .text-box:nth-child(n + 2) {
+        margin-top: 0;
+    }
+
+    .text-box:nth-child(3) {
+        margin-top: 24px;
+    }
+
+    .text-box:nth-child(odd) {
+        margin-right: 50px;
+    }
+
+    .title {
+        background-color: var(--gray02);
+    }
+
+    .company-benefits {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        background-color: var(--gray02);
+        margin: 0;
+        padding: 40px 11%;
+    }
+
+    .text-description {
+        margin: 18px 0 0 93px;
+        padding: 0;
+    }
+
+    .best-month {
+        margin: 81px 40px 58px 40px;
+    }
+
+    .best-person1, .best-person3 {
+        display: inline-block;
+    }
+
+    .best-players-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .photo-name {
+        margin-left: calc(17% - 35.5px);
+    }
+
+    .best-teams {
+        background-color: var(--purple);   
+        padding: 64px 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    br {
+        display: none;
+    }
+
+    .team-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .team-container > h2 {
+        width: 50%;
+        text-align: start;
+        margin: 0;
+    }
+
+    #team-btn {
+        background-color: var(--white-text);
+        color: var(--purple);
+    }
+
+    footer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-icons-logo {
+        flex-direction: column-reverse;
+        width: 20%;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .icon-container {
+        justify-content: center;
+    }
+
+    .icon:nth-child(-n + 4) {
+        margin-right: 12px;
+    }
+
+    .footer-nav-menu {
+        margin: 0;
+    }
+
+    form > input {
+        width: 201px;
+        border: none;
+    }
+
+    p.copyright {
+        margin-top: 0;
+    }
+    
+    .copyright {
+        width: 100%;
+        margin-left: 300%;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    header {
+        width: 70%;
+        margin-left: calc(50% - 30%);
+    }
+
+    main {
+        width: 70%;
+        margin-left: calc(50% - 30%);
+    }
+
+    .photo-name {
+        margin-left: calc(9.5% - 35.5px);
+    }
+
+    footer {
+        width: 70%;
+        margin-left: calc(50% - 30%);
+    }
+
+    .best-teams {
+        padding: 64px 150px;
+    }
+
+    .footer-nav-menu {
+        justify-content: center;
+    }
+
+    .footer-ul-menu-right {
+        margin-left: 60px;
+    }
+
+    .copyright {
+        margin-left: 290%;
+    }
+}
